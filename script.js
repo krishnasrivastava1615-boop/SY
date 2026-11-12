@@ -21,14 +21,14 @@ const CONFIG = {
     "If this little website makes you smile even once, then it has done exactly what I wanted it to do.",
     "Happy birthday, my girl. You matter more than this page could ever explain."],
   photos: [
-  { src: "assets/memory-6.jpg", caption: "My favourite smile ❤️", alt: "Memory 1" },
-  { src: "assets/memory-2.jpg", caption: "A beautiful moment ✨", alt: "Memory 2" },
-  { src: "assets/memory-3.jpg", caption: "My favourite person 💗", alt: "Memory 3" },
-  { src: "assets/memory-4.jpg", caption: "A moment to remember 🌷", alt: "Memory 4" },
-  { src: "assets/memory-5.jpg", caption: "You make everything better 💕", alt: "Memory 5" },
-  { src: "assets/memory-1.jpg", caption: "Forever special ♡", alt: "Memory 6" }
-]
+   { src: "memory-6.jpg", caption: "My favourite smile ❤️", alt: "Memory 1" },
+{ src: "memory-2.jpg", caption: "A beautiful moment ✨", alt: "Memory 2" },
+{ src: "memory-3.jpg", caption: "My favourite person 💗", alt: "Memory 3" },
+{ src: "memory-4.jpg", caption: "A moment to remember 🌷", alt: "Memory 4" },
+{ src: "memory-5.jpg", caption: "You make everything better 💕", alt: "Memory 5" },
+{ src: "memory-1.jpg", caption: "Forever special ♡", alt: "Memory 6" }
 };
+]
 
 /* ===== 2. DATE LOGIC (all in one place) =====
    IST is UTC+5:30 with no daylight saving, so unlock moments are fixed instants.
