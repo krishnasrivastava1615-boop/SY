@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>For my favourite person</title>
+<meta name="theme-color" content="#1a0a14">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="fx" aria-hidden="true"></canvas><div id="hearts" aria-hidden="true"></div>
+<button id="music" class="music" type="button" aria-pressed="false" aria-label="Play music">♪ <span>Music</span></button>
+<main>
+<section id="locked" class="screen" hidden><p class="kicker">For my favourite person</p><div class="lock" aria-hidden="true">♥</div><h1>Something beautiful is on its way.</h1><p class="soft">A little surprise is waiting for you. Come back when the clock says it's time.</p><div id="countdown" class="countdown" role="timer" aria-live="off"></div></section>
+<section id="day" class="screen" hidden><nav id="dots" class="dots" aria-label="Progress"></nav><article class="card letter" id="dayCard" tabindex="-1"><p class="kicker" id="dayDate"></p><h2 id="dayTitle"></h2><div id="dayText"></div><p class="teaser" id="dayTeaser"></p></article></section>
+<section id="birthday" class="screen" hidden><p class="kicker" id="bdSub"></p><h1 id="bdTitle" class="glow"></h1>
+<div class="cake" id="cake" aria-label="Birthday cake with three candles"><div class="candles"><i class="candle"><b class="flame"></b><u class="smoke"></u></i><i class="candle"><b class="flame"></b><u class="smoke"></u></i><i class="candle"><b class="flame"></b><u class="smoke"></u></i></div><div class="tier top"><span class="drip"></span></div><div class="tier bottom"><span class="drip"></span><span class="slice"></span></div><div class="knife" aria-hidden="true"></div><div class="plate"></div></div>
+<p id="wishMsg" class="soft" aria-live="polite">Close your eyes. Think of something you want most.</p><div class="actions"><button id="blow" class="btn" type="button">Make a Wish &amp; Blow the Candles</button><button id="cut" class="btn" type="button" disabled>Cut the Cake</button></div>
+<article id="letter" class="card letter" hidden tabindex="-1"></article><div id="love" class="love" hidden><h2>I LOVE YOU <span class="beat">♡</span></h2><p>More than this little page can ever explain.</p></div></section>
+<section id="gallery" class="gallery" hidden><h2>Moments I'd Keep Forever.</h2><div id="grid" class="grid"></div></section>
+</main>
+<div id="lightbox" class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo viewer"><button id="lbClose" class="lb-close" type="button" aria-label="Close photo">×</button><figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure></div>
+<!-- DEV-ONLY: remove this entire aside before final publishing -->
+<aside id="devTools" hidden><button id="devToggle" class="dev-toggle" type="button" aria-expanded="false" aria-controls="devPanel">🛠 Developer Mode</button><div id="devPanel" class="dev-panel" role="region" aria-label="Developer controls" hidden>
+<div class="dev-head"><b>Developer Mode</b><button id="devClose" type="button" aria-label="Close developer panel">×</button></div><p id="devStatus" class="dev-status" aria-live="polite"></p><h3>Preview a date (IST, 12:00 AM)</h3>
+<div class="dev-row"><button type="button" data-date="12">Nov 12</button><button type="button" data-date="13">Nov 13</button><button type="button" data-date="14">Nov 14</button><button type="button" data-date="15">Nov 15</button></div>
+<div class="dev-row"><button type="button" data-act="watch12">Watch Nov 12 unlock</button><button type="button" data-act="watch15">Watch Nov 15 unlock</button></div>
+<h3>Test features</h3><div class="dev-row"><button type="button" data-act="gallery">Gallery + lightbox</button><button type="button" data-act="confetti">Confetti</button><button type="button" data-act="blow">Blow candles</button><button type="button" data-act="cut">Cut cake</button><button type="button" data-act="letter">Show letter</button><button type="button" data-act="love">Show I LOVE YOU ♡</button><button type="button" data-act="resetcake">Reset cake</button></div><button type="button" class="dev-reset" data-act="real">Reset to real date</button>
+</div></aside>
+<script src="script.js"></script>
+</body></html>
