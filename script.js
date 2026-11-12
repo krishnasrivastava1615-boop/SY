@@ -2,7 +2,7 @@
 /* ===== DEV MODE FLAG =====
    true  = show the "Developer Mode" button and panel (testing only)
    false = all developer controls and date previews are disabled and removed. SET TO false BEFORE PUBLISHING. */
-const DEV_MODE = true;
+const DEV_MODE = false;
 
 /* ===== 1. EDIT HERE: names, messages, captions ===== */
 const CONFIG = {
