@@ -2,7 +2,7 @@
 /* ===== DEV MODE FLAG =====
    true  = show the "Developer Mode" button and panel (testing only)
    false = all developer controls and date previews are disabled and removed. SET TO false BEFORE PUBLISHING. */
-const DEV_MODE = false;
+const DEV_MODE = true;
 
 /* ===== 1. EDIT HERE: names, messages, captions ===== */
 const CONFIG = {
@@ -58,7 +58,7 @@ function render() {
   $("locked").hidden = s !== 0;
   $("day").hidden = !(s >= 1 && s <= 3);
   $("birthday").hidden = s !== 4;
-  $("gallery").hidden = s === 0;
+  $("gallery").hidden = s !== 4;
   if (s >= 1 && s <= 3) { viewDay = s; renderDay(); }
   if (s === 4) initBirthday();
 }
